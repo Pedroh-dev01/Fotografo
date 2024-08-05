@@ -18,12 +18,18 @@
 
 body {
   background-color: var(--bg_fundo);
-  padding: 0.8rem 2rem;
+  padding: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
 }
 
 header {
   background-color: var(--bege);
-  padding: 1rem;
+  padding: 1.4rem;
+  border-top-left-radius: var(--rounds);
+  border-top-right-radius: var(--rounds);
 }
 header nav {
   display: flex;
@@ -45,6 +51,72 @@ header nav .nav_links ul a {
   border-radius: var(--rounds);
 }
 header nav .nav_links ul a li {
-  font-size: 17px;
+  font-size: 20px;
   color: var(--text-black);
+}
+header nav .nav_links ul a li:hover {
+  font-size: 23px;
+  transition: 0.2s linear;
+}
+
+main .home {
+  background-color: var(--bege);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main .home h1 {
+  font-size: 13rem;
+}
+main .home h4 {
+  font-size: 3.3rem;
+  margin-top: -2rem;
+}
+main .home .container_divs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3.3rem;
+}
+main .home .container_divs .container__About_us {
+  background-color: var(--bg_fundo);
+  border-radius: var(--rounds);
+  color: var(--text-bege);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px;
+  width: 400px;
+  padding: 1.7rem;
+}
+main .home .container_divs .container__About_us p {
+  font-size: 26px;
+  width: 80%;
+  text-align: left;
+}
+main .home .container_divs .container__About_us .About_us {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  font-size: 24px;
+}
+main .home .container_divs .container__About_us .About_us a {
+  color: var(--text-bege);
+}
+main .home .container_divs .container__About_us .About_us a:hover {
+  text-decoration: underline;
+  transition: 0.9s linear;
+}
+main .home .container_divs .my_figure {
+  width: 80%;
+}
+main .home .container_divs .my_figure figure {
+  display: flex;
+  justify-content: flex-end;
+  border-radius: var(--rounds);
+}
+main .home .container_divs .my_figure figure img {
+  width: 80%;
+  height: 450px;
+  border-radius: 30px;
 }/*# sourceMappingURL=style.css.map */

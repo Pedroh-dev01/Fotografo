@@ -21,12 +21,18 @@
 
 body{
     background-color: var(--bg_fundo);
-    padding: .8rem 2rem;
+    padding: 2rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
 }
 
 header{
     background-color: var(--bege);
-    padding: 1rem;
+    padding: 1.4rem;
+    border-top-left-radius: var(--rounds);
+    border-top-right-radius: var(--rounds);
 
     nav{
         display: flex;
@@ -50,16 +56,90 @@ header{
                     padding: 5px 1.2rem;
                     border-radius: var(--rounds);
                     
-                    &:hover{
-
-                    }
                     li{
-                        font-size: 17px;
+                        font-size: 20px;
                         color: var(--text-black);
+
+                        &:hover{
+                            font-size: 23px;
+                            transition: .2s linear;
+                        }
                     }
                 }
             }
 
+        }
+    }
+}
+
+main{
+    .home{
+        background-color: var(--bege);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+        h1{
+            font-size: 13rem;
+        }
+
+        h4{
+            font-size: 3.3rem;
+            margin-top: -2rem;
+        }
+
+        .container_divs{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 3.3rem;
+            
+
+            .container__About_us{
+                background-color: var(--bg_fundo);
+                border-radius: var(--rounds);
+                color: var(--text-bege);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 450px;
+                width: 400px;
+                padding: 1.7rem;
+                p{
+                    font-size: 26px;
+                    width: 80%;
+                    text-align: left;
+                }
+
+                .About_us{
+                    display: flex;
+                    gap: .8rem;
+                    align-items: center;
+                    font-size: 24px;
+                    a{
+                        color: var(--text-bege);
+
+                        &:hover{
+                            text-decoration: underline;
+                            transition: .9s linear;
+                        }
+                    }
+                }
+            }
+
+            .my_figure{
+                width: 80%;
+                figure{
+                    display: flex;
+                    justify-content: flex-end;
+                    border-radius: var(--rounds);
+                    img{
+                        width: 80%;
+                        height: 450px;
+                        border-radius: 30px
+                    }
+                }
+            }
         }
     }
 }
