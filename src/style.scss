@@ -28,9 +28,16 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
 }
 
+.divisor{
+    background-color: var(--bg_fundo);
+    height: 2px;
+    width: 1295px;
+    margin: auto 2rem;
+}
+
 header{
     background-color: var(--bege);
-    padding: 1.4rem;
+    padding: 0 1.4rem;
     border-top-left-radius: var(--rounds);
     border-top-right-radius: var(--rounds);
 
@@ -40,8 +47,13 @@ header{
         justify-content: space-between;
 
         .logo{
-            span{
-                font-size: 19px;
+            display: flex;
+            align-items: center;
+            figure{
+                img{
+                    height: 180px;
+                    cursor: pointer;
+                }
             }
         }
 
@@ -81,11 +93,13 @@ main{
     
         h1{
             font-size: 13rem;
+            color: var(--text-black);
         }
 
         h4{
             font-size: 3.3rem;
             margin-top: -2rem;
+            color: var(--text-black);
         }
 
         .container_divs{
@@ -93,6 +107,7 @@ main{
             justify-content: space-between;
             align-items: center;
             padding: 2rem 3.3rem;
+            margin-bottom: 4rem;
             
 
             .container__About_us{
@@ -139,6 +154,212 @@ main{
                         border-radius: 30px
                     }
                 }
+            }
+        }
+    }
+
+    .about{
+        background-color: var(--bege);
+        padding-bottom: 2rem;
+        .info{
+            display: flex;
+            justify-content: space-between;
+            margin:2rem 2rem 5rem;
+
+            h2{
+                font-size: 40px;
+                align-items: flex-start;
+                color: var(--text-black);
+            }
+            p{
+                width: 45%;
+                font-size: 26px;
+                color: var(--text-black);
+            }
+        }
+
+        .about__figures{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            .img_about{
+                img{
+                    height: 280px;
+                    border-radius: var(--rounds);
+                }
+            }
+        }
+    }
+
+    .services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+        h2{
+            font-size: 8rem;
+            margin: 3rem auto;
+            color: var(--text-bege);
+        }
+        .conteiner__services{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 1.5rem;
+            #cards{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 250px;
+                width: 1250px;
+                padding: 2rem;
+                border-radius: var(--rounds);
+                color: var(--white);
+                cursor: pointer;
+                h3{
+                    font-size: 30px;
+                }
+                span{
+                    font-size: 21px;
+                }
+            }
+
+            .service_01{
+                background: url(assent/img/art\ direction.png);
+                background-position: center;
+            }
+
+            .service_03{
+                background: url(assent/img/photographer.png);
+                background-position: center;
+            }
+
+            .service_02{
+                background: url(assent/img/videographer.png);
+                background-position: center;
+            }
+
+        }
+    }
+
+    .project{
+        background-color: var(--bege);
+        padding: 5rem 2rem 2rem;
+        .divisor{
+            background-color: var(--bg_fundo);
+            height: 2px;
+            width: 90%;
+            margin: auto 2rem;
+        }
+        .info_project{
+            display: flex;
+            justify-content: space-between;
+            margin:2rem;
+            h2{
+                font-size: 40px;
+                color: var(--text-black);
+            }
+            
+            .ancora{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                a{
+                    span{
+                        font-size: 24px;
+                        color: var(--text-black);
+                    }
+                }
+            }
+        }
+
+        
+
+        .figures__projects {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+            grid-template-areas:
+                "Projeto_01 Projeto_02 Projeto_03"
+                "Projeto_04 Projeto_04 Projeto_03"
+                "Projeto_05 Projeto_05 Projeto_05";
+        
+            .Projeto_01 {
+                grid-area: Projeto_01;
+                border-radius: var(--rounds);
+            }
+        
+            .Projeto_02 {
+                grid-area: Projeto_02;
+                border-radius: var(--rounds);
+            }
+        
+            .Projeto_03 {
+                grid-area: Projeto_03;
+                border-radius: var(--rounds);
+            }
+        
+            .Projeto_04 {
+                grid-area: Projeto_04;
+                border-radius: var(--rounds);
+            }
+        
+            .Projeto_05 {
+                grid-area: Projeto_05;
+                border-radius: var(--rounds);
+            }
+        }
+        
+        
+    }
+}
+
+.contato{
+    background-color: var(--bege);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    gap: 1rem;
+    border-bottom-left-radius: var(--rounds);
+    border-bottom-right-radius: var(--rounds);
+    span{
+        font-size: 40px;
+    }
+    p{
+        font-size: 40px;
+        margin-top: -2rem;
+    }
+    .footer__end{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        .social__links{
+            display: flex;
+            flex-direction: column;
+            gap: 2.6rem;
+            background-color: var(--bg_fundo);
+            padding: 1rem;
+            border-radius: 15px;
+        }
+        .frase{
+            background-color: var(--bg_fundo);
+            padding: 1rem;
+            border-radius: 15px;
+            h3{
+                font-size: 9.2rem;
+                text-align: center;
+                color: var(--text-bege);
             }
         }
     }
